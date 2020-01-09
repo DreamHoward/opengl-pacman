@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="glm">
+      <UniqueIdentifier>{7f535329-6bca-4a9f-af27-dade84b37e6f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bashful.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="food.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="images.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maze.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pacman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pokey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shadow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sounds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="speedy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ghost.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\glm\glmimg_sim.c">
+      <Filter>glm</Filter>
+    </ClCompile>
+    <ClCompile Include="include\glm\glmimg_sdl.c">
+      <Filter>glm</Filter>
+    </ClCompile>
+    <ClCompile Include="include\glm\glmimg_png.c">
+      <Filter>glm</Filter>
+    </ClCompile>
+    <ClCompile Include="include\glm\glmimg_jpg.c">
+      <Filter>glm</Filter>
+    </ClCompile>
+    <ClCompile Include="include\glm\glmimg_devil.c">
+      <Filter>glm</Filter>
+    </ClCompile>
+    <ClCompile Include="include\glm\glmimg.c">
+      <Filter>glm</Filter>
+    </ClCompile>
+    <ClCompile Include="include\glm\glm_util.c">
+      <Filter>glm</Filter>
+    </ClCompile>
+    <ClCompile Include="include\glm\glm_helper.c">
+      <Filter>glm</Filter>
+    </ClCompile>
+    <ClCompile Include="include\glm\glm.c">
+      <Filter>glm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\bashful.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\food.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\images.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\maze.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pacman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pokey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shadow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sounds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speedy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ghost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsVarious.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsMiddle.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="load_and_bind_texture.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="png_load.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glm\glmint.h">
+      <Filter>glm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glm\glm_helper.h">
+      <Filter>glm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glm\glm.h">
+      <Filter>glm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\glm\glm.c.blend">
+      <Filter>glm</Filter>
+    </None>
+    <None Include="include\glm\Makefile.am">
+      <Filter>glm</Filter>
+    </None>
+    <None Include="include\glm\COPYING">
+      <Filter>glm</Filter>
+    </None>
+    <None Include="include\glm\ChangeLog">
+      <Filter>glm</Filter>
+    </None>
+    <None Include="include\glm\AUTHORS">
+      <Filter>glm</Filter>
+    </None>
+    <None Include="include\glm\glm.c.noblend">
+      <Filter>glm</Filter>
+    </None>
+    <None Include="include\glm\README.md">
+      <Filter>glm</Filter>
+    </None>
+    <None Include="include\glm\.cvsignore">
+      <Filter>glm</Filter>
+    </None>
+  </ItemGroup>
+</Project>

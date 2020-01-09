@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B2BA835B-F12C-4716-A9BC-35AFF58DE541}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)glew-2.1.0\include;$(ProjectDir)include\glm</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;D:\glew-2.1.0\lib\Release\Win32</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)glew-2.1.0\include;$(ProjectDir)include\glm</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;D:\glew-2.1.0\lib\Release\Win32</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)freeglut\include;$(ProjectDir)\include;$(ProjectDir)\include\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProjectDir)freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>Copy /Y "$(ProjectDir)freeglut\bin\freeglut.dll" "$(ProjectDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(ProjectDir)freeglut\include;$(ProjectDir)\include;$(ProjectDir)\include\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>Copy /Y "$(ProjectDir)freeglut\bin\freeglut.dll" "$(ProjectDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bashful.cpp" />
+    <ClCompile Include="food.cpp" />
+    <ClCompile Include="ghost.cpp" />
+    <ClCompile Include="images.cpp" />
+    <ClCompile Include="include\glm\glm.c" />
+    <ClCompile Include="include\glm\glmimg.c" />
+    <ClCompile Include="include\glm\glmimg_devil.c" />
+    <ClCompile Include="include\glm\glmimg_jpg.c" />
+    <ClCompile Include="include\glm\glmimg_png.c" />
+    <ClCompile Include="include\glm\glmimg_sdl.c" />
+    <ClCompile Include="include\glm\glmimg_sim.c" />
+    <ClCompile Include="include\glm\glm_helper.c" />
+    <ClCompile Include="include\glm\glm_util.c" />
+    <ClCompile Include="level.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="maze.cpp" />
+    <ClCompile Include="pacman.cpp" />
+    <ClCompile Include="pokey.cpp" />
+    <ClCompile Include="shadow.cpp" />
+    <ClCompile Include="sounds.cpp" />
+    <ClCompile Include="speedy.cpp" />
+    <ClCompile Include="wall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\bashful.h" />
+    <ClInclude Include="include\food.h" />
+    <ClInclude Include="include\ghost.h" />
+    <ClInclude Include="include\glm\glm.h" />
+    <ClInclude Include="include\glm\glmint.h" />
+    <ClInclude Include="include\glm\glm_helper.h" />
+    <ClInclude Include="include\images.h" />
+    <ClInclude Include="include\level.h" />
+    <ClInclude Include="include\maze.h" />
+    <ClInclude Include="include\pacman.h" />
+    <ClInclude Include="include\pokey.h" />
+    <ClInclude Include="include\shadow.h" />
+    <ClInclude Include="include\sounds.h" />
+    <ClInclude Include="include\speedy.h" />
+    <ClInclude Include="include\wall.h" />
+    <ClInclude Include="load_and_bind_texture.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="png_load.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="UtilsMiddle.h" />
+    <ClInclude Include="UtilsVarious.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\glm\.cvsignore" />
+    <None Include="include\glm\AUTHORS" />
+    <None Include="include\glm\ChangeLog" />
+    <None Include="include\glm\COPYING" />
+    <None Include="include\glm\glm.c.blend" />
+    <None Include="include\glm\glm.c.noblend" />
+    <None Include="include\glm\Makefile.am" />
+    <None Include="include\glm\README.md" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
